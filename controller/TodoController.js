@@ -1,10 +1,22 @@
 class TodoController {
     static getTodos(req,res){
-        res.send('Page todos utama');
+        const arrObjects = [
+            {
+                id:1,
+                name:"laptop"
+            },
+            {
+                id:2,
+                name:"personal computer"
+            }
+        ]
+        res.json(arrObjects);
     }
 
     static addTodos (req,res){
-        res.send("Page todos add")
+        res.json({
+            message:"page todos app"
+        })
     }
 
 }
